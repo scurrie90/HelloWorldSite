@@ -1,0 +1,61 @@
+.widget-header {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.widget-header a {
+    color: #343a40;
+}
+
+.icon-sm {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .widget-header a:hover {
+    color: #8cd0e3;
+  }
+
+  .icontext {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .icon {
+      position: relative;
+      margin-right: 10px;
+      flex-shrink: 0;
+      flex-grow:0;
+  }
+
+  .widget-header .notify {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    background-color: #5e5aa7;
+  }
+
+  .widget-header .notify:hover{
+    background-color: #8cd0e3;
+  }
+
+  .search-btn {
+      background-color: #5e5aa7;
+      color: white;
+  }
+
+  .search-btn:hover{
+      background-color: #8cd0e3;
+  }
+
+  @media screen and (max-width: 640px){
+    .widget-header{
+      margin: 3% 0; 
+    }
+  }

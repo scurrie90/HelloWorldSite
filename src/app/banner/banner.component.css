@@ -1,0 +1,13 @@
+.section-main{
+    background-color: #e9e7f0;
+}
+.card-link {
+    color: #5e5aa7;
+}
+
+.list-group-item:hover,
+.list-group-item:hover a {
+    background-color: #8cd0e3;
+    color: white;
+    cursor: pointer;
+}
