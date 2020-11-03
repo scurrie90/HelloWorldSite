@@ -4,9 +4,13 @@
             <a href="#" class="btn btn-lg btn-outline-success mt-3 float-right">See all</a>
             <h3 class="display-4 text-muted">Popular Products</h3>
         </header>
-    
-        <div class="row">
-            <app-product-item></app-product-item>
+
+        <div>
+            <div class="row my-4">
+            <div  *ngFor = "let product of productList" class="product-card px-1 my-3">
+                <app-product-item [productItem]="product"></app-product-item>
+            </div>
+        </div>
         </div>
     </div>
-    </section>
+</section>

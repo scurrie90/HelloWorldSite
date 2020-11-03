@@ -10,6 +10,10 @@ import { ProductComponent } from './product/product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdSectionComponent } from './ad-section/ad-section.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,6 +25,8 @@ import { AdSectionComponent } from './ad-section/ad-section.component';
     ProductItemComponent,
     FooterComponent,
     AdSectionComponent,
+    CartComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule, FormsModule

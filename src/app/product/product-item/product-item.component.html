@@ -1,18 +1,15 @@
-<div class="row my-4">
-    <div *ngFor = "let product of products" class="col-lg-3 col-md-6 col-sm-12 product-card px-0 my-3">
-    <div href="#" class="container card card-product-grid" style="width: 18rem;">
+<div class="col-lg-3 col-md-6">
+    <div href="#" class="card card-product-grid" style="width: 19rem;">
             <a href="#" class="img-wrap"> 
-                <img [src]="product.imagePath" class="card-img-top image" alt="{{ product.imagePath }}"> 
+                <img [src]="productItem.imagePath" class="card-img-top image" alt="product"> 
             </a>
             <div class="overlay">
-                 <button type="button" class="btn btn-dark py-2 text">See Product</button>
+                 <button type="button" (click)="addToCart()" class="btn btn-dark py-2 btn-block">Add to Cart</button>
             </div>
             <div class="card-body border-top text-center">
             <div class="card-text">
-                <a href="#" class="card-link title"><h5 class="card-title text-muted">{{ product.name }}</h5></a>
-                <div class="price mt-1">${{ product.price }}</div>
+                <a href="#" class="card-link title"><h5 class="card-title text-muted">{{ productItem.name }}</h5></a>
+                <div class="price mt-1">${{ productItem.price }}</div>
             </div>
         </div>
     </div>
-    </div>
-     </div>
